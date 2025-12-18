@@ -1,0 +1,13 @@
+.timeline-svg {
+  width: 100%;
+  height: auto;
+}
+
+.grid line {
+  stroke: #e8e8e8;
+  stroke-dasharray: 3,3;
+}
+
+.grid path {
+  stroke-width: 0;
+}

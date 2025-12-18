@@ -1,0 +1,20 @@
+.category-svg {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+}
+
+.slice path {
+  transition: all 0.2s ease;
+}
+
+.category-tooltip {
+  line-height: 1.6;
+}
+
+.category-tooltip strong {
+  font-size: 15px;
+  color: #ff6b6b;
+  display: block;
+  margin-bottom: 6px;
+}

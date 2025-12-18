@@ -1,0 +1,38 @@
+.top-businesses-svg {
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+}
+
+.bar {
+  transition: opacity 0.2s ease;
+}
+
+.bar:hover {
+  opacity: 0.8 !important;
+}
+
+.bar-label {
+  pointer-events: none;
+}
+
+.business-tooltip {
+  line-height: 1.6;
+}
+
+.business-tooltip strong {
+  font-size: 15px;
+  color: #ff6b6b;
+  display: block;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  .top-businesses-svg {
+    min-height: 500px;
+  }
+  
+  .bar-label {
+    font-size: 10px !important;
+  }
+}

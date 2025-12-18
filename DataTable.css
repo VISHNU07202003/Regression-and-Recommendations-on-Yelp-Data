@@ -1,0 +1,242 @@
+.data-table-section {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 40px 0;
+  box-shadow: var(--shadow-md);
+}
+
+.table-header {
+  margin-bottom: 24px;
+}
+
+.table-header h2 {
+  font-size: 1.5rem;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.table-header p {
+  color: var(--gray-400);
+  font-size: 0.9rem;
+}
+
+.table-controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.table-search {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid var(--gray-200);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.table-search:focus {
+  outline: none;
+  border-color: var(--yelp-red);
+  box-shadow: 0 0 0 3px rgba(211, 35, 35, 0.1);
+}
+
+.btn-download {
+  padding: 12px 24px;
+  background: var(--yelp-green);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-download:hover {
+  background: #009688;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--gray-200);
+}
+
+.business-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.business-table thead {
+  background: var(--gray-50);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.business-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.business-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.business-table th.sortable:hover {
+  background: var(--gray-100);
+  color: var(--yelp-red);
+}
+
+.business-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--gray-100);
+  font-size: 0.9rem;
+}
+
+.business-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.business-table tbody tr:hover {
+  background: var(--gray-50);
+}
+
+.business-name strong {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: var(--gray-100);
+  color: var(--gray-600);
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.rating-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rating-value {
+  font-weight: 600;
+  color: var(--yelp-red);
+  min-width: 30px;
+}
+
+.stars {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.reviews-cell {
+  font-weight: 500;
+  color: var(--gray-600);
+}
+
+.price-cell {
+  font-weight: 600;
+  color: var(--yelp-orange);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.status-badge.open {
+  background: rgba(0, 166, 153, 0.1);
+  color: var(--yelp-green);
+}
+
+.status-badge.closed {
+  background: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray-200);
+}
+
+.btn-page {
+  padding: 10px 20px;
+  background: var(--white);
+  color: var(--yelp-red);
+  border: 2px solid var(--yelp-red);
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-page:hover:not(:disabled) {
+  background: var(--yelp-red);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-page:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.page-info {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .table-controls {
+    flex-direction: column;
+  }
+
+  .btn-download {
+    width: 100%;
+  }
+
+  .business-table {
+    font-size: 0.85rem;
+  }
+
+  .business-table th,
+  .business-table td {
+    padding: 10px 8px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-page {
+    width: 100%;
+  }
+}

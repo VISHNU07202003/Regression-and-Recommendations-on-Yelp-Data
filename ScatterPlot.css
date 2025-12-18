@@ -1,0 +1,24 @@
+.scatter-svg {
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+}
+
+.dot {
+  transition: all 0.2s ease;
+}
+
+.dot:hover {
+  r: 8;
+}
+
+.scatter-tooltip {
+  line-height: 1.6;
+}
+
+.scatter-tooltip strong {
+  font-size: 15px;
+  color: #ff6b6b;
+  display: block;
+  margin-bottom: 6px;
+}

@@ -1,0 +1,8 @@
+.engagement-chart-container {
+  height: 350px;
+  position: relative;
+}
+
+.engagement-chart-container canvas {
+  max-height: 100%;
+}
