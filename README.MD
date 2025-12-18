@@ -89,8 +89,3 @@ A comprehensive, full-stack data visualization platform built with React, D3.js,
 ### Prerequisites
 - Node.js 16+ and npm
 - Git
-
-### Clone Repository
-```bash
-git clone https://github.com/VISHNU07202003/yelp-dashboard.git
-cd yelp-dashboard
